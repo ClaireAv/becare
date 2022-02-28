@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: 'Mrs Saint Delafield', cursive; */
+    /* font-family: 'Tenor Sans', sans-serif; */
+}
+body{
+    font-family: 'Tenor Sans', sans-serif;
+    background: url(/ressources/girl-1868656.jpg) no-repeat center/cover;
+    height: 80vh;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0 0 30px 0;
+}
+h2{
+    font-family: 'Mrs Saint Delafield', cursive; 
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #8A0438;
+}
+h3{
+    font-size:3rem ;
+    font-weight: 400;
+}
+p{
+    font-family:  Helvetica, sans-serif, Arial;
+    font-size: 18px;
+    
+}
+a{
+    color: white;
+}
+a:hover{
+    color:#8A0438 ;
+}
+
+button{
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: #BB97AA;
+    border: none;
+    font-family:  Helvetica, sans-serif, Arial;
+    border-radius: 5px;
+}
+button:hover{
+    color: #8A0438;
+    box-shadow: 3px 3px 5px #8A0438;
+}
+span{
+    color: #8A0438;
+}
+
+
+
+
+
+
+/* <!-- header --> */
+.promo{
+    background: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.promo p{
+    padding: 10px;
+}
+
+
+
+
+
+
+header{
+    background: linear-gradient(to bottom, black,rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 40px ;
+    width: 100vw;
+    z-index: 20;
+    
+  }
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    
+  }
+  
+  .nav-logo{
+    font-size: 2rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+    
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+      
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #8A0438;
+  }
+  
+  @media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 100px;
+      gap: 0;
+      flex-direction: column;
+      background: linear-gradient(to bottom,rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.753));
+
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item {
+      margin: 15px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* nav  */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;    
+    align-items: center; 
+    gap: 40px;   
+}
+.nav_picto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+.picto{
+    width: 30px; 
+    color: #8A0438;   
+}
+.bi{
+    color: #8A0438;
+}
+
+/* <!-- home --> */
+
+.home{
+    width: 40vw;
+ 
+    margin: 350px 150px 0px 150px;
+}
+
+.home p{
+    color: white;
+}
+@media (max-width: 900px){
+    .home{
+        width: 60vw;
+       
+        margin: 350px 150px 50px 150px;
+    }
+}
+
+/* <!-- cosmetics --> */
+
+.cosmetics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 450px 150px 100px 150px;
+    
+}
+.cosmetics_presentation{
+    text-align: center;
+    width: 50%;
+}
+.cosmetics_btn button{
+    background-color: #fff4f8;
+}
+.br{
+    display: none;
+}
+.cosmetics_products{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    
+}
+.product{
+   text-align: center;    
+}
+.product a{
+    color: black;
+}
+.product a:hover{
+    color: #8A0438;
+    
+}
+
+.product img:hover{
+    opacity: 0.5;
+}
+
+
+@media (max-width: 1250px) {
+    .cosmetics{
+        margin: 350px auto 100px ;
+
+    }
+
+    .cosmetics_products{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .br{
+        display: flex;
+    }
+}
+
+
+/* discount */
+
+.discount_presentation{
+    background: url(/ressources/girl-picking-flowers-1725176_1920.jpg) no-repeat center / cover ;
+    height: 850px; 
+    display: flex; 
+    
+}
+.discount_presentation h1{
+   color: black;
+}
+.nul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    width: 550px;
+    background-color: rgba(255, 251, 196, 0.384);
+    background: linear-gradient(to right, rgba(7, 27, 7, 0.473), 70%, rgba(255, 255, 255, 0));
+}
+.nul h1, .nul h2{
+    color: white;
+}
+
+
+/* <!-- popular --> */
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular_3{
+    display: flex;    
+    gap: 20px;
+}
+.popular img{
+    width: 100%;
+}
+
+.popular_4{
+    display: flex;
+   height: 800px;
+   width: 100%;
+
+}
+
+.cont1{
+    background: url(/ressources/photoban3/jaune.jpg) no-repeat center / cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+}
+.texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    background-color: rgba(255, 228, 196, 0.384);
+    height: 100%;
+    text-align: center;
+}
+
+.cont2{
+    background: url(/ressources/photoban3/vert.jpg)no-repeat center / cover;
+    width: 100%;
+    
+}
+.cont3{
+    background: url(/ressources/photoban3/violet.jpg) no-repeat center / cover;
+    width: 100%;
+}
+.cont4{
+    background: url(/ressources/photoban3/orange.jpg)no-repeat center / cover;
+    width: 100%;
+}
+@media (max-width: 900px) {
+
+    .popular_3{
+        flex-direction: column;
+    }
+    .popular_3 img{
+        height: 300px;
+    }
+    .popular_4{
+       flex-wrap: wrap;
+       height: auto;
+    }
+    .cont1,.cont3,.cont2{
+        display: none;
+    }
+}
+
+/* <!-- stay --> */
+.stay{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.stay_box{
+    background: url(/ressources/photoban3/stay.jpg)no-repeat center / cover ;
+    opacity: 0.7;
+    padding: 50px;
+    width: 600px;
+
+}
+.inscription{
+    display: flex;
+    align-items: center;
+    gap : 30px;
+}
+#mail{
+    height: 40px;
+    font-size: 25px;
+
+}
